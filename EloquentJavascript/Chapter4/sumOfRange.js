@@ -11,12 +11,12 @@ return rangeOfNumbers;
 
 const range = (start, end, step) => {
   if (start > end){
-    for (let number = start; number >= end; number --) {
+    for (let number = start; number >= end; number=number+step) {
     rangeOfNumbers.push (number);
     }
 
   } else {
-      for (let number = start; number <= end; number ++) {
+      for (let number = start; number <= end; number= number+step) {
          rangeOfNumbers.push (number);
       }
     }
@@ -25,7 +25,7 @@ return rangeOfNumbers;
   
 }
 
-console.log(range(5,2,-1));
+console.log(range(10,2,-2));
 
 const sum = (array) =>{
   let suma = 0;
