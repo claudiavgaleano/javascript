@@ -6,7 +6,7 @@ const reverseArray = (arrayValue) => {
   return result;
 }
 
-console.log(reverseArray (["B","A","D","O","O"]));
+console.log(reverseArray(["B","A","D","O","O"]));
 
 const reverseArrayInPlace = (array) => {
 	for (let n = 0; n < array.length - n; n++) {
@@ -18,4 +18,4 @@ const reverseArrayInPlace = (array) => {
 }
 
 
-console.log(reverseArray (["E","L","O","B","I"]));
+console.log(reverseArrayInPlace(["E","L","O","B","I"]));
